@@ -10,19 +10,24 @@ public class Students_Data {
 		Student s=new Student();
 		s.setId(1);
 		s.setName("mahesh");
+		
 		Student s1=new Student();
 		s1.setId(2);
 		s1.setName("Om");
-		v.add(s1);
+	
 		v.add(s);
+		v.add(s1);
 
-		  Iterator i=v.iterator();
-		  while(i.hasNext())
-		  {
-			 Object obj= i.next();
-			System.out.println(s.getId()+" "+s.getName());
-		  }
-
+			Iterator i= v.iterator();
+			
+	while(i.hasNext())
+	{
+		Object obj=i.next();
+		Student ss=(Student)obj;
+		System.out.println(ss.getId()+" "+ss.getName());
+	}
+			
+		 
 		
 		
 	}
